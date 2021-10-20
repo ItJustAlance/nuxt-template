@@ -23,11 +23,13 @@ module.exports = {
     ]
   },
   rootDir: __dirname,
-  serverMiddleware: [
+    // потом включить
+ // serverMiddleware: [
     // '~~/serverMiddleware/headers'
-  ],
+ // ],
   router: {
-    middleware: ['resetBreacrumbs'],
+      // потом включить
+  //  middleware: ['resetBreacrumbs'],
     prefetchLinks: false
   },
   loading: { color: '#ddd' },
@@ -36,8 +38,8 @@ module.exports = {
     './assets/scss/global-styles.scss'
   ],
   plugins: [
-    { src: '~~/plugins/vue-modal.js', mode: 'client' },
-    { src: '~~/plugins/vue-lazy-load.js' }
+ //   { src: '~~/plugins/vue-modal.js', mode: 'client' },
+ //   { src: '~~/plugins/vue-lazy-load.js' }
   ],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
@@ -65,7 +67,7 @@ module.exports = {
   },
   styleResources: {
     // your settings here
-    scss: ['./assets/scss/global-variables.scss'], // alternative: scss
+    scss: ['./assets/scss/main.scss'], // alternative: scss
     less: [],
     stylus: []
   },
